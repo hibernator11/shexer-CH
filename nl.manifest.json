@@ -1,0 +1,18 @@
+[   
+    {
+        "schemaLabel": "KB data schema:Person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shex-CH/master/nl/shaper_nl_person.shex",
+        "dataLabel": "Get 100 items typed as schema:Person from KB" ,
+        "data": "Endpoint: https://data.bibliotheken.nl/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Person\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "KB data schema:Place",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shex-CH/master/nl/shaper_nl_place.shex",
+        "dataLabel": "Get 100 items typed as schema:Place from KB" ,
+        "data": "Endpoint: https://data.bibliotheken.nl/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Place\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    }
+]

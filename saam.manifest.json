@@ -1,0 +1,26 @@
+[   
+    {
+        "schemaLabel": "SAAM data cidoc-crm:E38_Image",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shex-CH/master/smithsonian/shaper_saam_image.shex",
+        "dataLabel": "Get 100 items typed as cidoc-crm:E38_Image from SAAM" ,
+        "data": "Endpoint: http://edan.si.edu/saam/sparql",
+        "queryMap": "SPARQL '''PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>\r\n select ?s where {\r\n ?s rdf:type cidoc-crm:E38_Image\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "SAAM data cidoc-crm:E21_Person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shex-CH/master/smithsonian/shaper_saam_person.shex",
+        "dataLabel": "Get 100 items typed as cidoc-crm:E21_Person from SAAM" ,
+        "data": "Endpoint: http://edan.si.edu/saam/sparql",
+        "queryMap": "SPARQL '''PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>\r\n select ?s where {\r\n ?s rdf:type cidoc-crm:E21_pERSON\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "SAAM data cidoc-crm:E39_Actor",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shex-CH/master/smithsonian/shaper_saam_actor.shex",
+        "dataLabel": "Get 100 items typed as cidoc-crm:E39_Actor from SAAM" ,
+        "data": "Endpoint: http://edan.si.edu/saam/sparql",
+        "queryMap": "SPARQL '''PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>\r\n select ?s where {\r\n ?s rdf:type cidoc-crm:E39_Actor\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    }
+]
