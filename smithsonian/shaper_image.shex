@@ -1,0 +1,19 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://example.org/>
+PREFIX weso-s: <http://weso.es/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX si-pi: <http://edan.si.edu/saam/id/person-institution/>
+
+weso-s:E38_Image
+{
+   rdf:type  [cidoc-crm:E38_Image]  ;                          # 100.0 %
+   cidoc-crm:P1_is_identified_by  IRI  +;                      # 100.0 %
+            # 86.0 % obj: IRI. Cardinality: {1}
+   cidoc-crm:P2_has_type  IRI  +;                              # 100.0 %
+            # 86.0 % obj: IRI. Cardinality: {1}
+   cidoc-crm:P3_has_note  xsd:string  ?
+            # 98.0 % obj: xsd:string. Cardinality: {1}
+}
+
+

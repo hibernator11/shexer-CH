@@ -1,0 +1,26 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://example.org/>
+PREFIX weso-s: <http://weso.es/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX si-pi: <http://edan.si.edu/saam/id/person-institution/>
+
+weso-s:E39_Actor
+{
+   rdf:type  [cidoc-crm:E21_Person]  ;                         # 100.0 %
+   rdf:type  [cidoc-crm:E39_Actor]  ;                          # 100.0 %
+   cidoc-crm:P1_is_identified_by  IRI  +;                      # 100.0 %
+   cidoc-crm:P138i_has_representation  IRI  +;                 # 100.0 %
+   <http://edan.si.edu/saam/id/ontologies/PE_has_main_representation>  IRI  ;          # 100.0 %
+   cidoc-crm:P98i_was_born  IRI  ;                             # 100.0 %
+   cidoc-crm:P48_has_preferred_identifier  IRI  ;              # 100.0 %
+   cidoc-crm:P107i_is_current_or_former_member_of  IRI  ;          # 100.0 %
+   cidoc-crm:P100i_died_in  IRI  ?;
+            # 94.0 % obj: IRI. Cardinality: {1}
+   <http://edan.si.edu/saam/id/ontologies/PE_has_note_artistbio>  xsd:string  *;
+            # 80.0 % obj: xsd:string. Cardinality: +
+   <http://edan.si.edu/saam/id/ontologies/PE_has_note_luceartistbio>  xsd:string  ?
+            # 70.0 % obj: xsd:string. Cardinality: {1}
+}
+
+
