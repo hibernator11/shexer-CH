@@ -1,2 +1,2 @@
-# shexer-ch
-shexer-ch
+# shexer-CH
+shexer-CH
