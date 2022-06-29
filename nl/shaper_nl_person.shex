@@ -10,8 +10,8 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX bibo: <http://purl.org/ontology/bibo/>
 
-start = @<person>
-<person> {
+weso-s:Person
+{
    rdf:type  [schema:Person]  ;                                # 100.0 %
    <http://www.w3.org/2000/01/rdf-schema#label>  xsd:string  +;          # 100.0 %
             # 98.0 % obj: xsd:string. Cardinality: {1}
@@ -21,7 +21,7 @@ start = @<person>
             # 98.0 % obj: xsd:string. Cardinality: {1}
    schema:givenName  xsd:string  +;                            # 100.0 %
             # 98.0 % obj: xsd:string. Cardinality: {1}
-   schema:mainEntityOfPage  xsd:string  ;                      # 100.0 %
+   schema:mainEntityOfPage  BNODE  ;                      # 100.0 %
    schema:sameAs  IRI  *
             # 90.0 % obj: IRI. Cardinality: +
 }
