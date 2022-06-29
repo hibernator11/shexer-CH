@@ -14,7 +14,7 @@ start = @<place>
 <place> {
    rdf:type  [schema:Place]  ;                                 # 100.0 %
    schema:name  xsd:string  ;                                  # 100.0 %
-   schema:mainEntityOfPage  xsd:string                         # 100.0 %
+   schema:mainEntityOfPage  BNODE                         # 100.0 %
 }
 
 
