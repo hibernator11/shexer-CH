@@ -4,8 +4,9 @@ from shexer.consts import NT, SHEXC, SHACL_TURTLE
 target_classes = [
 #    "http://schema.org/Place",
 #    "http://schema.org/Person",
-    "http://schema.org/Book"
-    #"http://purl.org/ontology/bibo/DocumentPart" 
+    #"http://schema.org/Book"
+#    "http://schema.org/Dataset"
+    "http://schema.org/Organization"
 ]
 
 namespaces_dict = {"http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf",
@@ -29,11 +30,11 @@ shaper = Shaper(target_classes=target_classes,
                 #graph_file_input=input_nt_file,
                 url_endpoint=url_endpoint, 
                 input_format=NT,
-                limit_remote_instances=50,
+                limit_remote_instances=15,
                 namespaces_dict=namespaces_dict,  # Default: no prefixes
                 instantiation_property="http://www.w3.org/1999/02/22-rdf-syntax-ns#type")  # Default rdf:type
 
-output_file = "shaper_nl_book.shex"
+output_file = "shaper_nl_organization.shex"
 
 shaper.shex_graph(output_file=output_file,
                   acceptance_threshold=0.7)

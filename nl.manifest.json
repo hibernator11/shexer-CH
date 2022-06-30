@@ -22,5 +22,21 @@
         "data": "Endpoint: https://data.bibliotheken.nl/sparql",
         "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Book\r\n}\r\n limit 100'''@START",
         "status": "conformant"
+    },
+    {
+        "schemaLabel": "KB data schema:Dataset",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_nl_dataset.shex",
+        "dataLabel": "Get 100 items typed as schema:Dataset from KB" ,
+        "data": "Endpoint: https://data.bibliotheken.nl/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Dataset\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "KB data schema:Organization",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_nl_organization.shex",
+        "dataLabel": "Get 100 items typed as schema:Organization from KB" ,
+        "data": "Endpoint: https://data.bibliotheken.nl/sparql",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Organization\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
     }
 ]
