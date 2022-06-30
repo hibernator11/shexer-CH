@@ -2,12 +2,14 @@ from shexer.shaper import Shaper
 from shexer.consts import NT, SHEXC, SHACL_TURTLE
 
 target_classes = [
-#    "http://schema.org/Place"
-    "http://schema.org/Person"
+#    "http://schema.org/Place",
+#    "http://schema.org/Person",
+    "http://schema.org/Book"
     #"http://purl.org/ontology/bibo/DocumentPart" 
 ]
 
 namespaces_dict = {"http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf",
+                   "http://www.w3.org/2000/01/rdf-schema#": "rdfs", 
                    "http://example.org/": "ex",
                    "http://weso.es/shapes/": "",
                    "http://www.w3.org/2001/XMLSchema#": "xsd",
@@ -31,7 +33,7 @@ shaper = Shaper(target_classes=target_classes,
                 namespaces_dict=namespaces_dict,  # Default: no prefixes
                 instantiation_property="http://www.w3.org/1999/02/22-rdf-syntax-ns#type")  # Default rdf:type
 
-output_file = "shaper_nl_person.shex"
+output_file = "shaper_nl_book.shex"
 
 shaper.shex_graph(output_file=output_file,
                   acceptance_threshold=0.7)
