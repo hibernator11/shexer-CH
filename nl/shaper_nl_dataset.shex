@@ -18,7 +18,7 @@ start = @<dataset>
    schema:license  IRI  ;                                      # 100.0 %
    schema:description  rdf:langString  +;                      # 100.0 %
             # 80.0 % obj: rdf:langString. Cardinality: {1}
-   schema:identifier  @weso-s:Dataset  ;                       # 100.0 %
+   #schema:identifier  IRI  ;                       # 100.0 %
    schema:name  rdf:langString  ;                              # 100.0 %
    schema:dateModified  xsd:string  ;                          # 100.0 %
    schema:datePublished  xsd:string  ;                         # 100.0 %
