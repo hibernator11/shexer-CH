@@ -11,7 +11,7 @@ PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX bibo: <http://purl.org/ontology/bibo/>
 
 start = @<documentpart>
-<documentpart>
+<documentpart> {
    rdf:type  [bibo:DocumentPart]  ;                            # 100.0 %
    dc:isPartOf  IRI  ;                                         # 100.0 %
    bibo:locator  xsd:string                                    # 100.0 %
