@@ -1,0 +1,26 @@
+[   
+    {
+        "schemaLabel": "KB data kbv:Instance",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_kb_instance.shex",
+        "dataLabel": "Get 100 items typed as kbv:Instance from KB" ,
+        "data": "Endpoint: https://libris.kb.se/sparql",
+        "queryMap": "SPARQL '''PREFIX kbv: <https://id.kb.se/vocab/>\r\n select ?s where {\r\n ?s rdf:type kbv:Instance\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "KB data kbv:Item",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_kb_item.shex",
+        "dataLabel": "Get 100 items typed as kbv:Item from KB" ,
+        "data": "Endpoint: https://libris.kb.se/sparql",
+        "queryMap": "SPARQL '''PREFIX kbv: <https://id.kb.se/vocab/>\r\n select ?s where {\r\n ?s rdf:type kbv:Item\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "KB data kbv:Record",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_kb_record.shex",
+        "dataLabel": "Get 100 items typed as kbv:Record from KB" ,
+        "data": "Endpoint: https://libris.kb.se/sparql",
+        "queryMap": "SPARQL '''PREFIX kbv: <https://id.kb.se/vocab/>\r\n select ?s where {\r\n ?s rdf:type kbv:Record\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    }
+]

@@ -1,0 +1,32 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://example.org/>
+PREFIX weso-s: <http://weso.es/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX schema: <http://schema.org/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX creativeCommons: <http://creativecommons.org/ns#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX kbv: <https://id.kb.se/vocab/>
+
+weso-s:Instance
+{
+   rdf:type  [kbv:Instance]  ;                                 # 100.0 %
+   kbv:hasTitle  xsd:string  +;                                # 100.0 %
+            # 86.66666666666667 % obj: xsd:string. Cardinality: {1}
+   kbv:instanceOf  xsd:string  ;                               # 100.0 %
+   kbv:issuanceType  IRI  ;                                    # 100.0 %
+   kbv:publication  xsd:string  ?;
+            # 80.0 % obj: xsd:string. Cardinality: {1}
+   kbv:extent  xsd:string  ?;
+            # 80.0 % obj: xsd:string. Cardinality: {1}
+   kbv:carrierType  IRI  ?;
+            # 73.33333333333333 % obj: IRI. Cardinality: {1}
+   kbv:mediaType  IRI  ?
+            # 73.33333333333333 % obj: IRI. Cardinality: {1}
+}
+
+
