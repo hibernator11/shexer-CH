@@ -1,0 +1,34 @@
+[   
+    {
+        "schemaLabel": "ONB data ore:Aggregation",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/onb/shaper_onb_aggregation.shex",
+        "dataLabel": "Get 100 items typed as ore:Aggregation from ONB" ,
+        "data": "Endpoint: https://lod.onb.ac.at/sparql/anno",
+        "queryMap": "SPARQL '''PREFIX ore: <http://www.openarchives.org/ore/terms/>\r\n select ?s where {\r\n ?s rdf:type ore:Aggregation\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "ONB data skos:Concept",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/onb/shaper_onb_concept.shex",
+        "dataLabel": "Get 100 items typed as skos:Concept from ONB" ,
+        "data": "Endpoint: https://lod.onb.ac.at/sparql/anno",
+        "queryMap": "SPARQL '''PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\r\n select ?s where {\r\n ?s rdf:type skos:Concept\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+         "schemaLabel": "ONB data edm:ProvidedCHO",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/onb/shaper_onb_providedcho.shex",
+        "dataLabel": "Get 100 items typed as edm:ProvidedCHO from ONB" ,
+        "data": "Endpoint: https://lod.onb.ac.at/sparql/anno",
+        "queryMap": "SPARQL '''PREFIX edm: <http://www.europeana.eu/schemas/edm/>\r\n select ?s where {\r\n ?s rdf:type edm:ProvidedCHO\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "ONB data services:Service",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/onb/shaper_onb_service.shex",
+        "dataLabel": "Get 100 items typed as services:Service from ONB" ,
+        "data": "Endpoint: https://lod.onb.ac.at/sparql/anno",
+        "queryMap": "SPARQL '''PREFIX services: <http://rdfs.org/sioc/services#>\r\n select ?s where {\r\n ?s rdf:type services:Service\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    }
+]
