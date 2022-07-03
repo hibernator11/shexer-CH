@@ -1,0 +1,42 @@
+[   
+    {
+        "schemaLabel": "www1lod data cidoc-crm:E5_Event",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/ww1lod/shaper_ww1lod_event.shex",
+        "dataLabel": "Get 100 items typed as cidoc-crm:E5_Event from www1lod",
+        "data": "Endpoint: https://ldf.fi/ww1lod/sparql",
+        "queryMap": "SPARQL '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>\r\n select ?s where {\r\n ?s rdf:type cidoc-crm:E5_Event\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "www1lod data cidoc-crm:E21_Person",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/fi/shaper_ww1lod_person.shex",
+        "dataLabel": "Get 100 items typed as cidoc-crm:E21_Person from www1lod",
+        "data": "Endpoint: https://ldf.fi/ww1lod/sparql",
+        "queryMap": "SPARQL '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>\r\n select ?s where {\r\n ?s rdf:type cidoc-crm:E5_Event\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "www1lod data enc:E1418_Image",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/ww1lod/shaper_ww1lod_image.shex",
+        "dataLabel": "Get 100 items typed as enc:E1418_Image from www1lod",
+        "data": "Endpoint: https://ldf.fi/ww1lod/sparql",
+        "queryMap": "SPARQL '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n PREFIX enc: <http://encyclopedia.1914-1918-online.net/lod/schema#>\r\n select ?s where {\r\n ?s rdf:type enc:E1418_Image\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "www1lod data ww1lod:AtrocityIncident",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/ww1lod/shaper_ww1lod_incident.shex",
+        "dataLabel": "Get 100 items typed as ww1lod:AtrocityIncident from www1lod",
+        "data": "Endpoint: https://ldf.fi/ww1lod/sparql",
+        "queryMap": "SPARQL '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n PREFIX ww1lod: <http://ldf.fi/ww1lod/schema#>\r\n select ?s where {\r\n ?s rdf:type ww1lod:AtrocityIncident\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    },
+    {
+        "schemaLabel": "www1lod data cidoc-crm:E53_Place",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/ww1lod/shaper_ww1lod_place.shex",
+        "dataLabel": "Get 100 items typed as cidoc-crm:E53_Place from www1lod",
+        "data": "Endpoint: https://ldf.fi/ww1lod/sparql",
+        "queryMap": "SPARQL '''PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\r\n PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>\r\n select ?s where {\r\n ?s rdf:type cidoc-crm:E53_Place\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    }
+]
