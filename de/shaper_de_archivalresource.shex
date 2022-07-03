@@ -1,0 +1,47 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://example.org/>
+PREFIX weso-s: <http://weso.es/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX schema: <http://schema.org/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX creativeCommons: <http://creativecommons.org/ns#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX dev: <http://data.archiveshub.ac.uk/def/>
+
+start = @<item>
+<item> {
+   rdf:type  [dev:ArchivalResource]  ;                         # 100.0 %
+   rdfs:label  xsd:string  ;                                   # 100.0 %
+   rdfs:seeAlso  IRI  ;                                        # 100.0 %
+   schema:genre  xsd:string  +;                                # 100.0 %
+            # 92.85714285714286 % obj: xsd:string. Cardinality: {1}
+   dc:date  xsd:string  ;                                      # 100.0 %
+   dc:description  xsd:string  ;                               # 100.0 %
+   dc:identifier  xsd:string  +;                               # 100.0 %
+            # 92.85714285714286 % obj: xsd:string. Cardinality: {2}
+   dc:title  xsd:string  ;                                     # 100.0 %
+   dev:accessProvidedBy  IRI  ;                                # 100.0 %
+   dev:dateCreatedAccumulatedString  xsd:string  ;             # 100.0 %
+   dev:level  IRI  ;                                           # 100.0 %
+   dev:otherFindingAids  xsd:string  ;                         # 100.0 %
+   <http://www.w3.org/2004/02/skos/core#prefLabel>  xsd:string  ;          # 100.0 %
+   <urn:isbn:1-931666-22-9#did>  xsd:string  +;                # 100.0 %
+            # 85.71428571428571 % obj: xsd:string. Cardinality: {1}
+   <urn:isbn:1-931666-22-9#level>  xsd:string  ;               # 100.0 %
+   <urn:isbn:1-931666-22-9#otherfindaid>  xsd:string  +;          # 100.0 %
+            # 85.71428571428571 % obj: xsd:string. Cardinality: {1}
+   dc:extent  IRI  ?;
+            # 92.85714285714286 % obj: IRI. Cardinality: {1}
+   schema:keywords  xsd:string  ?;
+            # 92.85714285714286 % obj: xsd:string. Cardinality: {1}
+   dev:extent  xsd:string  ?;
+            # 92.85714285714286 % obj: xsd:string. Cardinality: {1}
+   <http://dbpedia.org/ontology/setDesigner>  IRI  ?
+            # 85.71428571428571 % obj: IRI. Cardinality: {1}
+}
+
+

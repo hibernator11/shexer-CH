@@ -1,0 +1,10 @@
+[   
+    {
+        "schemaLabel": "DE data dev:ArchivalResource",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/de/shaper_de_archivalresource.shex",
+        "dataLabel": "Get 100 items typed as dev:ArchivalResource from DE" ,
+        "data": "Endpoint: https://slod.fiz-karlsruhe.de/sparql",
+        "queryMap": "SPARQL '''PREFIX dev: <http://data.archiveshub.ac.uk/def/>\r\n select ?s where {\r\n ?s rdf:type dev:ArchivalResource\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    }
+]
