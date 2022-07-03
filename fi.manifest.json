@@ -1,0 +1,10 @@
+[   
+    {
+        "schemaLabel": "FI data cidoc-crm:E5_Event",
+        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/fi/shaper_fi_event.shex",
+        "dataLabel": "Get 100 items typed as cidoc-crm:E5_Event from FI" ,
+        "data": "Endpoint: http://ldf.fi/ww1lod/sparql",
+        "queryMap": "SPARQL '''PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>\r\n select ?s where {\r\n ?s rdf:type cidoc-crm:E5_Event\r\n}\r\n limit 100'''@START",
+        "status": "conformant"
+    }
+]
