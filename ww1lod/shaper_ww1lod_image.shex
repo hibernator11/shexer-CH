@@ -13,8 +13,8 @@ PREFIX bibo: <http://purl.org/ontology/bibo/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX enc: <http://encyclopedia.1914-1918-online.net/lod/schema#>
 
-weso-s:E1418_Image
-{
+start = @<Image>
+<Image> {
    skos:prefLabel  xsd:string  ;                               # 100.0 %
    rdf:type  [enc:E1418_Image]  ;                              # 100.0 %
    skos:title  xsd:string                                      # 100.0 %

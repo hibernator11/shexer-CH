@@ -14,8 +14,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX enc: <http://encyclopedia.1914-1918-online.net/lod/schema#>
 PREFIX ww1lod: <http://ldf.fi/ww1lod/schema#>
 
-weso-s:AtrocityIncident
-{
+start = @<AtrocityIncident>
+<AtrocityIncident> {
    skos:prefLabel  rdf:langString  ;                           # 100.0 %
    rdf:type  [ww1lod:AtrocityIncident]  ;                      # 100.0 %
    cidoc-crm:P7_took_place_at  IRI  ;                          # 100.0 %

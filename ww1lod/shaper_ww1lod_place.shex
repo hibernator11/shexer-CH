@@ -14,7 +14,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX enc: <http://encyclopedia.1914-1918-online.net/lod/schema#>
 PREFIX ww1lod: <http://ldf.fi/ww1lod/schema#>
 
-weso-s:E53_Place
+start = @<E53_Place>
+<E53_Place>
 {
    skos:prefLabel  xsd:string  ;                               # 100.0 %
    rdf:type  [cidoc-crm:E53_Place]  ;                          # 100.0 %
