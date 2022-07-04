@@ -17,21 +17,15 @@ start = @<book>
    rdf:type  [schema:Book]  ;                                  # 100.0 %
    rdf:type  [schema:ProductModel]  ;                          # 100.0 %
    schema:inLanguage  xsd:string  +;                           # 100.0 %
-            # 98.0 % obj: xsd:string. Cardinality: {1}
    schema:name  xsd:string  ;                                  # 100.0 %
-   schema:publication  xsd:string  ;                           # 100.0 %
-   schema:mainEntityOfPage  xsd:string  ;                      # 100.0 %
+   schema:publication  BNODE  ;                           # 100.0 %
+   schema:mainEntityOfPage  BNODE  ;                      # 100.0 %
    rdfs:label  xsd:string  ?;
-            # 98.0 % obj: xsd:string. Cardinality: {1}
-   schema:numberOfPages  xsd:string  ?;
-            # 98.0 % obj: xsd:string. Cardinality: {1}
+   schema:numberOfPages  xsd:integer  ?;
    schema:sameAs  IRI  ?;
-            # 96.0 % obj: IRI. Cardinality: {1}
    schema:isbn  xsd:string  ?;
-            # 84.0 % obj: xsd:string. Cardinality: {1}
-   schema:author  IRI  *
-            # 82.0 % obj: IRI. Cardinality: +
-            # 80.0 % obj: IRI. Cardinality: {1}
+   schema:author  IRI  *;
+   schema:author  BNODE  *
 }
 
 

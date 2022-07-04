@@ -14,9 +14,10 @@ PREFIX bibo: <http://purl.org/ontology/bibo/>
 start = @<organization>
 <organization> {
    rdf:type  [schema:Organization]  ;                          # 100.0 %
-   schema:location  xsd:string  ;                              # 100.0 %
+   schema:location  BNODE * ;                              # 100.0 %
    schema:name  xsd:string  ;                                  # 100.0 %
-   schema:mainEntityOfPage  xsd:string                         # 100.0 %
+   schema:mainEntityOfPage  BNODE ;                        # 100.0 %
+   schema:mainEntityOfPage  IRI*   
 }
 
 
