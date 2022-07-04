@@ -25,7 +25,7 @@ namespaces_dict = {"http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf",
                    "http://www.openarchives.org/ore/terms/": "ore",
                    "http://www.w3.org/2004/02/skos/core#": "skos",
                    "http://purl.org/dc/elements/1.1/": "dc",
-                   "http://usefulinc.com/ns/doap": "doap",
+                   "http://usefulinc.com/ns/doap#": "doap",
                    "http://rdfs.org/sioc/services#": "sioc"
                    }
 
