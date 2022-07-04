@@ -19,6 +19,9 @@ start = @<E53_Place>
 {
    skos:prefLabel  xsd:string  ;                               # 100.0 %
    rdf:type  [cidoc-crm:E53_Place]  ;                          # 100.0 %
+   rdf:type  [ww1lod:County]* ;
+   rdf:type  [ww1lod:Country]* ;
+   rdf:type  [ww1lod:Village]* ;
    cidoc-crm:P89_falls_within  IRI  ?
             # 75.0 % obj: IRI. Cardinality: {1}
 }
