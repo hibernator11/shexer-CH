@@ -14,13 +14,13 @@ PREFIX edm: <http://www.europeana.eu/schemas/edm/>
 PREFIX ore: <http://www.openarchives.org/ore/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX doap: <http://usefulinc.com/ns/doap>
+PREFIX doap: <http://usefulinc.com/ns/doap#>
 PREFIX sioc: <http://rdfs.org/sioc/services#>
 
 start = @<service>
 <service> {
    dc-terms:conformsTo  IRI  ;                                 # 100.0 %
-   doap:#implements  IRI  ;                                    # 100.0 %
+   doap:implements  IRI  ;                                    # 100.0 %
    rdf:type  [sioc:Service]            # 100.0 %
 }
 
