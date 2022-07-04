@@ -22,13 +22,13 @@ start = @<AtrocityIncident>
    cidoc-crm:P4_has_time-span  IRI  ;                          # 100.0 %
    ww1lod:killings  xsd:string  ?;
             # 95.0 % obj: xsd:string. Cardinality: {1}
-   ww1lod:deportations  xsd:string  ?;
+   ww1lod:deportations  xsd:boolean  ?;
             # 95.0 % obj: xsd:string. Cardinality: {1}
-   ww1lod:panic  xsd:string  ?;
+   ww1lod:panic  xsd:boolean  ?;
             # 95.0 % obj: xsd:string. Cardinality: {1}
-   ww1lod:humanShields  xsd:string  ?;
+   ww1lod:humanShields  xsd:boolean  ?;
             # 95.0 % obj: xsd:string. Cardinality: {1}
-   ww1lod:combatRelated  xsd:string  ?;
+   ww1lod:combatRelated  xsd:boolean  ?;
             # 90.0 % obj: xsd:string. Cardinality: {1}
    ww1lod:destroyedBuildings  xsd:string  ?
             # 90.0 % obj: xsd:string. Cardinality: {1}
