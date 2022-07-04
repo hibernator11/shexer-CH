@@ -40,9 +40,9 @@ shaper = Shaper(target_classes=target_classes,
                 namespaces_dict=namespaces_dict,  # Default: no prefixes
                 instantiation_property="http://www.w3.org/1999/02/22-rdf-syntax-ns#type")  # Default rdf:type
 
-output_file = "shaper_onb_aggregation.shex"
+output_file = "shaper_onb_providedcho.shex"
 
 shaper.shex_graph(output_file=output_file,
-                  acceptance_threshold=0.6)
+                  acceptance_threshold=0.4)
 
 print("Done!")
