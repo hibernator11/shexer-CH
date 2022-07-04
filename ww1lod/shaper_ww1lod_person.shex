@@ -15,7 +15,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 start = @<person>
 <person>
 {
-   skos:prefLabel  xsd:string  ;          # 100.0 %
+   skos:prefLabel  xsd:string* ;          # 100.0 %
+   skos:prefLabel  rdf:langString* ; 
    rdf:type  [cidoc-crm:E21_Person]  ;                         # 100.0 %
    skos:related  IRI  +          # 100.0 %
 }
