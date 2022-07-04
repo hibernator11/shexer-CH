@@ -4,8 +4,8 @@ from shexer.consts import NT, SHEXC, SHACL_TURTLE
 target_classes = [
 #     "http://www.europeana.eu/schemas/edm/WebResource"
 #     "http://rdfs.org/sioc/services#Service"
-#     "http://www.europeana.eu/schemas/edm/ProvidedCHO"
-     "http://www.openarchives.org/ore/terms/Aggregation"
+     "http://www.europeana.eu/schemas/edm/ProvidedCHO"
+#     "http://www.openarchives.org/ore/terms/Aggregation"
 #     "http://www.w3.org/2004/02/skos/core#Concept"
 ]
 
@@ -43,6 +43,6 @@ shaper = Shaper(target_classes=target_classes,
 output_file = "shaper_onb_aggregation.shex"
 
 shaper.shex_graph(output_file=output_file,
-                  acceptance_threshold=0.4)
+                  acceptance_threshold=0.6)
 
 print("Done!")

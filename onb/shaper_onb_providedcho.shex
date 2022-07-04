@@ -13,11 +13,12 @@ PREFIX bibo: <http://purl.org/ontology/bibo/>
 PREFIX edm: <http://www.europeana.eu/schemas/edm/>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX ore: <http://www.openarchives.org/ore/terms/>
+PREFIX dc-terms: <http://purl.org/dc/terms/>
 
 start = @<providedcho>
 <providedcho> {
-   dc:spatial  IRI  ;                                          # 100.0 %
-   edm:hasView  IRI  {4};                                      # 100.0 %
+   dc-terms:spatial  IRI  ;                                    # 100.0 %
+   edm:hasView  IRI  *;                                      # 100.0 %
    edm:isShownAt  IRI  ;                                       # 100.0 %
    edm:isShownBy  IRI  ;                                       # 100.0 %
    edm:provider  xsd:string  ;                                 # 100.0 %
