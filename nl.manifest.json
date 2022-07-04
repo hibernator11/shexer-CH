@@ -4,7 +4,7 @@
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_nl_person.shex",
         "dataLabel": "Get 100 items typed as schema:Person from NL" ,
         "data": "Endpoint: https://data.bibliotheken.nl/sparql",
-        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Person\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select distinct ?s where {\r\n ?s rdf:type schema:Person\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
@@ -12,7 +12,7 @@
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_nl_place.shex",
         "dataLabel": "Get 100 items typed as schema:Place from NL" ,
         "data": "Endpoint: https://data.bibliotheken.nl/sparql",
-        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Place\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select distinct ?s where {\r\n ?s rdf:type schema:Place\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     },
     {
@@ -20,23 +20,15 @@
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_nl_book.shex",
         "dataLabel": "Get 100 items typed as schema:Book from NL" ,
         "data": "Endpoint: https://data.bibliotheken.nl/sparql",
-        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Book\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select distinct ?s where {\r\n ?s rdf:type schema:Book\r\n}\r\n limit 100'''@START",
         "status": "conformant"
-    },
-    {
-        "schemaLabel": "NL data schema:Dataset",
-        "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_nl_dataset.shex",
-        "dataLabel": "Get 100 items typed as schema:Dataset from NL" ,
-        "data": "Endpoint: https://data.bibliotheken.nl/sparql",
-        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Dataset\r\n .  FILTER(regex(str(?s), "https://data.bibliotheken.nl" ) )}\r\n limit 100'''@START",
-        "status": "conformant" 
     },
     {
         "schemaLabel": "NL data schema:Organization",
         "schemaURL": "https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl/shaper_nl_organization.shex",
         "dataLabel": "Get 100 items typed as schema:Organization from NL" ,
         "data": "Endpoint: https://data.bibliotheken.nl/sparql",
-        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select ?s where {\r\n ?s rdf:type schema:Organization\r\n}\r\n limit 100'''@START",
+        "queryMap": "SPARQL '''PREFIX schema: <http://schema.org/>\r\n select distinct ?s where {\r\n ?s rdf:type schema:Organization\r\n}\r\n limit 100'''@START",
         "status": "conformant"
     }
 ]
