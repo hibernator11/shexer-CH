@@ -29,7 +29,8 @@ start = @<aggregation>
    rdf:type  [edm:ProvidedCHO]  ;                              # 100.0 %
    rdf:type  [ore:Aggregation]  ;                              # 100.0 %
    dc:title  xsd:string  ;                                     # 100.0 %
-   dc:subject  xsd:string  ;                                   # 100.0 %
+   dc:subject  xsd:string  *;                                  # 100.0 %
+   dc:subject  IRI  *;
    dc:date  xsd:string  ;                                      # 100.0 %
    dc:type  xsd:string  ;                                      # 100.0 %
    dc:identifier  xsd:string  ;                                # 100.0 %
