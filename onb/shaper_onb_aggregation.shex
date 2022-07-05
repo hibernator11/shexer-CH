@@ -17,8 +17,8 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX doap: <http://usefulinc.com/ns/doap#>
 PREFIX sioc: <http://rdfs.org/sioc/services#>
 
-weso-s:Aggregation
-{
+start = @<aggregation>
+<aggregation> {
    dc-terms:spatial  IRI  ;                                    # 100.0 %
    edm:hasView  IRI  {4};                                      # 100.0 %
    edm:isShownAt  IRI  ;                                       # 100.0 %
