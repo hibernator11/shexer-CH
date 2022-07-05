@@ -17,8 +17,8 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX doap: <http://usefulinc.com/ns/doap#>
 PREFIX sioc: <http://rdfs.org/sioc/services#>
 
-weso-s:ProvidedCHO
-{
+start = @<pcho>
+<pcho> {
    dc-terms:spatial  IRI  ?;
             # 50.0 % obj: IRI. Cardinality: {1}
    edm:hasView  IRI  *;
