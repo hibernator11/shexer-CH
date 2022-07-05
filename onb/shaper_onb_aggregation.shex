@@ -20,7 +20,7 @@ PREFIX sioc: <http://rdfs.org/sioc/services#>
 start = @<aggregation>
 <aggregation> {
    dc-terms:spatial  IRI  ;                                    # 100.0 %
-   edm:hasView  IRI  {4};                                      # 100.0 %
+   edm:hasView  IRI  *;                                      # 100.0 %
    edm:isShownAt  IRI  ;                                       # 100.0 %
    edm:isShownBy  IRI  ;                                       # 100.0 %
    edm:provider  xsd:string  ;                                 # 100.0 %
