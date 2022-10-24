@@ -13,9 +13,7 @@ PREFIX bibo: <http://purl.org/ontology/bibo/>
 
 start = @<book>
 <book> {
-   rdf:type  [schema:CreativeWork]  ;                          # 100.0 %
-   rdf:type  [schema:Book]  ;                                  # 100.0 %
-   rdf:type  [schema:ProductModel]  ;                          # 100.0 %
+      rdf:type  [schema:Book]  ;                                  # 100.0 %
    schema:inLanguage  xsd:string  +;                           # 100.0 %
    schema:name  xsd:string  ;                                  # 100.0 %
    schema:publication  BNODE  ;                           # 100.0 %
@@ -23,9 +21,12 @@ start = @<book>
    rdfs:label  xsd:string  ?;
    schema:numberOfPages  xsd:integer  ?;
    schema:sameAs  IRI  ?;
-   schema:isbn  xsd:string  ?;
+   schema:isbn  xsd:string  *;
    schema:author  IRI  *;
-   schema:author  BNODE  *
+   schema:author  BNODE  *;
+   schema:contributor  IRI  *;
+   schema:contributor  BNODE  *;
+   schema:bookFormat IRI  *
 }
 
 
