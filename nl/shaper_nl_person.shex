@@ -20,8 +20,9 @@ start = @<person>
             # 98.0 % obj: xsd:string. Cardinality: {1}
    schema:familyName  xsd:string  +;                           # 100.0 %
             # 98.0 % obj: xsd:string. Cardinality: {1}
-   schema:givenName  xsd:string  +;                            # 100.0 %
+   schema:givenName  xsd:string  *;                            # 100.0 %
             # 98.0 % obj: xsd:string. Cardinality: {1}
+   schema:alternateName xsd:string * ;
    schema:mainEntityOfPage  BNODE  ;                      # 100.0 %
    schema:sameAs  IRI  *
             # 90.0 % obj: IRI. Cardinality: +
