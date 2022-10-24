@@ -27,7 +27,8 @@ start = @<book>
    schema:author  BNODE  *;
    schema:contributor  IRI  *;
    schema:contributor  BNODE  *;
-   schema:bookFormat IRI  *
+   schema:bookFormat IRI  *;
+   schema:description  xsd:string  *
 }
 
 
