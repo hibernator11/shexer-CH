@@ -16,11 +16,11 @@ start = @<book>
    rdf:type  [schema:Book]  ;                                  # 100.0 %
    rdf:type  [schema:CreativeWork] *;
    rdf:type [schema:ProductModel] *;
-   schema:inLanguage  xsd:string  +;                           # 100.0 %
-   schema:name  xsd:string  ;                                  # 100.0 %
-   schema:publication  BNODE  ;                           # 100.0 %
+   schema:inLanguage  xsd:string  *;                           # 100.0 %
+   schema:name  xsd:string  +;                                  # 100.0 %
+   schema:publication  BNODE  *;                           # 100.0 %
    schema:mainEntityOfPage  BNODE  ;                      # 100.0 %
-   rdfs:label  xsd:string  ?;
+   rdfs:label  xsd:string  +;
    schema:numberOfPages  xsd:integer  ?;
    schema:sameAs  IRI  ?;
    schema:isbn  xsd:string  *;
