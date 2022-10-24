@@ -16,9 +16,9 @@ start = @<person>
    rdf:type  [schema:Person]  ;                                # 100.0 %
    rdfs:label  xsd:string  +;          # 100.0 %
             # 98.0 % obj: xsd:string. Cardinality: {1}
-   schema:name  xsd:string  +;                                 # 100.0 %
+   schema:name  xsd:string  *;                                 # 100.0 %
             # 98.0 % obj: xsd:string. Cardinality: {1}
-   schema:familyName  xsd:string  +;                           # 100.0 %
+   schema:familyName  xsd:string  *;                           # 100.0 %
             # 98.0 % obj: xsd:string. Cardinality: {1}
    schema:givenName  xsd:string  *;                            # 100.0 %
             # 98.0 % obj: xsd:string. Cardinality: {1}
