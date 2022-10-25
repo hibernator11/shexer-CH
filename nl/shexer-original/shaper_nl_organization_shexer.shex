@@ -1,0 +1,23 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://example.org/>
+PREFIX weso-s: <http://weso.es/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX schema: <http://schema.org/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX creativeCommons: <http://creativecommons.org/ns#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+
+weso-s:Organization
+{
+   schema:mainEntityOfPage  @<BNode>  ;                        # 100.0 %
+   schema:name  xsd:string  ;                                  # 100.0 %
+   rdf:type  [schema:Organization]  ;                          # 100.0 %
+   schema:location  @<BNode>  ?
+            # 96.0 % obj: @<BNode>. Cardinality: {1}
+}
+
+
