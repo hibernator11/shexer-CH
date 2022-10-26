@@ -5,7 +5,7 @@ target_classes = [
 #    "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
 #    "http://www.cidoc-crm.org/cidoc-crm/E21_Person"
 #    "http://encyclopedia.1914-1918-online.net/lod/schema#E1418_Image"
-#    "http://ldf.fi/ww1lod/schema#AtrocityIncident"
+    #"http://ldf.fi/ww1lod/schema#AtrocityIncident"
      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
 ]
 
@@ -35,11 +35,11 @@ shaper = Shaper(target_classes=target_classes,
                 #graph_file_input=input_nt_file,
                 url_endpoint=url_endpoint, 
                 input_format=NT,
-                limit_remote_instances=20,
+                limit_remote_instances=200,
                 namespaces_dict=namespaces_dict,  # Default: no prefixes
                 instantiation_property="http://www.w3.org/1999/02/22-rdf-syntax-ns#type")  # Default rdf:type
 
-output_file = "shaper_ww1lod_place.shex"
+output_file = "shaper_ww1lod_place_orig.shex"
 
 shaper.shex_graph(output_file=output_file,
                   acceptance_threshold=0.7)

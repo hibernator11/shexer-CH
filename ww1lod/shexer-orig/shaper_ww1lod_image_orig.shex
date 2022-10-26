@@ -11,14 +11,14 @@ PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX bibo: <http://purl.org/ontology/bibo/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX enc: <http://encyclopedia.1914-1918-online.net/lod/schema#>
+PREFIX ww1lod: <http://ldf.fi/ww1lod/schema#>
 
-start = @<person>
-<person>
+weso-s:E1418_Image
 {
-   skos:prefLabel  xsd:string* ;          # 100.0 %
-   skos:prefLabel  rdf:langString* ; 
-   rdf:type  [cidoc-crm:E21_Person]  ;    # 100.0 %
-   skos:related  IRI  *
+   skos:prefLabel  xsd:string  ;                               # 100.0 %
+   rdf:type  [enc:E1418_Image]  ;                              # 100.0 %
+   skos:title  xsd:string                                      # 100.0 %
 }
 
 
