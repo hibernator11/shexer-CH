@@ -40,5 +40,5 @@ LIMIT 10
 ### References
 
 - Gustavo Candela Romero, Maria Pilar Escobar Esteban, María Dolores Sáez, Manuel Marco Such: A Shape Expression approach for assessing the quality of Linked Open Data in libraries. Semantic Web 14(2): 159-179 (2023). https://doi.org/10.3233/SW-210441
-- Daniel Fernandz Alvárez, José Emilio Labra, Daniel Gallo-Avello. Automatic extraction of shapes using sheXer. https://doi.org/10.1016/j.knosys.2021.107975
+- Daniel Fernandez Alvárez, José Emilio Labra, Daniel Gallo-Avello. Automatic extraction of shapes using sheXer. https://doi.org/10.1016/j.knosys.2021.107975
 - Gustavo Candela: Towards a semantic approach in GLAM Labs: the case of the Data Foundry at the National Library of Scotland. CoRR abs/2301.11182 (2023). https://doi.org/10.48550/arXiv.2301.11182
