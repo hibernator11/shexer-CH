@@ -6,7 +6,11 @@ This project is based on the automatic data quality assessment of Linked Open Da
 Shape Expressions for evaluating data quality in LOD published by Cultural Heritage institutions
 
 
-[ShEx validation tool National Library of the Netherlands](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl.manifest.json)
+- [ShEx validation tool National Library of the Netherlands](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl.manifest.json)
+
+- [ShEx validation tool Austrian National Library](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/onb.manifest.json)
+
+- [ShEx validation tool World War I dataset](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/ww1lod.manifest.json)
 
 
 
