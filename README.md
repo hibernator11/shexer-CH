@@ -1,6 +1,8 @@
 # shexer-CH
 This project is based on the automatic data quality assessment of Linked Open Data repositories made available for the public by Cultural Heritage institutions.
 
+### Background
+This work explores how the quality of Linked Open Data made available by Cultural Heritage institutions can be automatically assessed. The results obtained can be useful for other institutions who wish to publish and assess their collections. This work is based on the tool [sheXer](https://github.com/DaniFdezAlvarez/shexer) to mine an RDF dataset to automatically generate the Shape Expressions.
 
 ### Shape Expressions 
 Shape Expressions for evaluating data quality in LOD published by Cultural Heritage institutions
@@ -13,7 +15,7 @@ Shape Expressions for evaluating data quality in LOD published by Cultural Herit
 - [ShEx validation tool World War I dataset](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/ww1lod.manifest.json)
 
 
-### Background
+
 
 
 ### Austrian National Library
