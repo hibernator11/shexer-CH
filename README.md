@@ -5,17 +5,13 @@ This project is based on the automatic data quality assessment of Linked Open Da
 This work explores how the quality of Linked Open Data made available by Cultural Heritage institutions can be automatically assessed. The results obtained can be useful for other institutions who wish to publish and assess their collections. This work is based on the tool [sheXer](https://github.com/DaniFdezAlvarez/shexer) to mine an RDF dataset to automatically generate the Shape Expressions.
 
 ### Shape Expressions 
-Shape Expressions for evaluating data quality in LOD published by Cultural Heritage institutions
-
+The following links provide a set of Shape Expression examples based on relevant Cultural Heritage LOD datasets that can be assessed using the [ShEx2 Simple Online Validator tool](http://shex.io/webapps/shex.js/doc/shex-simple.html). These Shape Expressions have been automatically generated using the public SPARQL endpoints.
 
 - [ShEx validation tool National Library of the Netherlands](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/nl.manifest.json)
 
 - [ShEx validation tool Austrian National Library](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/onb.manifest.json)
 
 - [ShEx validation tool World War I dataset](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/ww1lod.manifest.json)
-
-
-
 
 
 ### Austrian National Library
@@ -41,3 +37,8 @@ SELECT ?s ?actor ?place WHERE {
 LIMIT 10
 ```
 
+### References
+
+- Gustavo Candela Romero, Maria Pilar Escobar Esteban, María Dolores Sáez, Manuel Marco Such: A Shape Expression approach for assessing the quality of Linked Open Data in libraries. Semantic Web 14(2): 159-179 (2023). https://doi.org/10.3233/SW-210441
+- Daniel Fernandz Alvárez, José Emilio Labra, Daniel Gallo-Avello. Automatic extraction of shapes using sheXer. https://doi.org/10.1016/j.knosys.2021.107975
+- Gustavo Candela: Towards a semantic approach in GLAM Labs: the case of the Data Foundry at the National Library of Scotland. CoRR abs/2301.11182 (2023). https://doi.org/10.48550/arXiv.2301.11182
