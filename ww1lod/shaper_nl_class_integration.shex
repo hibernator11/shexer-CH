@@ -1,0 +1,51 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ex: <http://example.org/>
+PREFIX weso-s: <http://weso.es/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX schema: <http://schema.org/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX creativeCommons: <http://creativecommons.org/ns#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX enc: <http://encyclopedia.1914-1918-online.net/lod/schema#>
+PREFIX ww1lod: <http://ldf.fi/ww1lod/schema#>
+
+weso-s:E5_Event
+{
+   <http://purl.org/dc/elements/1.1/description>  rdf:langString  ;          # 100.0 %
+   cidoc-crm:P7_took_place_at  IRI  ;                          # 100.0 %
+            # 80.0 % obj: @weso-s:E53_Place. Cardinality: +
+   rdf:type  [cidoc-crm:E5_Event]  ;                           # 100.0 %
+   cidoc-crm:P14_carried_out_by  @weso-s:E39_Actor  {2};          # 100.0 %
+   cidoc-crm:P10_falls_within  IRI  +;                         # 100.0 %
+   skos:prefLabel  rdf:langString  *;
+            # 80.0 % obj: rdf:langString. Cardinality: +
+   cidoc-crm:P4_has_time-span  IRI  ?;
+            # 80.0 % obj: IRI. Cardinality: {1}
+   <http://www.w3.org/2002/07/owl#sameAs>  IRI  ?
+            # 80.0 % obj: IRI. Cardinality: {1}
+}
+
+
+weso-s:E39_Actor
+{
+   skos:prefLabel  xsd:string  {2};                            # 100.0 %
+   rdf:type  [cidoc-crm:E39_Actor]                             # 100.0 %
+}
+
+
+weso-s:E53_Place
+{
+   rdf:type  [cidoc-crm:E53_Place]  ;                          # 100.0 %
+   skos:prefLabel  xsd:string  +;                              # 100.0 %
+   geo:lat  xsd:string  *;
+            # 75.0 % obj: xsd:string. Cardinality: +
+   geo:long  xsd:string  *
+            # 75.0 % obj: xsd:string. Cardinality: +
+}
+
+
