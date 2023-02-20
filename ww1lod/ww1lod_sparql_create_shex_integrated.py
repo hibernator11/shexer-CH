@@ -1,11 +1,14 @@
 from shexer.shaper import Shaper
-from shexer.consts import NT
+from shexer.consts import NT, SHEXC, SHACL_TURTLE
 
 target_classes = [
     "http://www.cidoc-crm.org/cidoc-crm/E5_Event",
-    "http://www.cidoc-crm.org/cidoc-crm/E39_Actor", 
+    "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+    "http://encyclopedia.1914-1918-online.net/lod/schema#E1418_Image",
+    "http://ldf.fi/ww1lod/schema#AtrocityIncident",
     "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
 ]
+
 
 
 namespaces_dict = {"http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf",
@@ -27,41 +30,16 @@ namespaces_dict = {"http://www.w3.org/1999/02/22-rdf-syntax-ns#": "rdf",
 
 url_endpoint="http://ldf.fi/ww1lod/sparql"
 
-list_of_url_input= [
-
-#event
-"http://ldf.fi/ww1lod/62bff175",
-"http://ldf.fi/ww1lod/21084a29",
-"http://ldf.fi/ww1lod/73b7794c",
-"http://ldf.fi/ww1lod/eda57b6b",
-"http://ldf.fi/ww1lod/655e0c1d",
-"http://ldf.fi/ww1lod/dd6a8aa0",
-"http://ldf.fi/ww1lod/91967821",
-"http://ldf.fi/ww1lod/21084a29",
-"http://ldf.fi/ww1lod/40298920",
-"http://ldf.fi/ww1lod/a88aba27",
-
-#place
-"http://ldf.fi/ww1lod/aca7bec4",
-"http://ldf.fi/ww1lod/1912cfe4",
-"http://ldf.fi/ww1lod/4e451641",
-"http://ldf.fi/ww1lod/e2584ba7",
-"http://ldf.fi/ww1lod/3ef9e89e",
-"http://ldf.fi/ww1lod/b2ec1413",
-"http://ldf.fi/ww1lod/e2584ba7",
-"http://ldf.fi/ww1lod/f977dd18",
-
-#actor
-"http://ldf.fi/ww1lod/ba7a31a0",
-"http://ldf.fi/ww1lod/b86dc19f",
-]
-
 shaper = Shaper(target_classes=target_classes,
-                list_of_url_input=list_of_url_input, 
+                #raw_graph=raw_graph,
+                #graph_file_input=input_nt_file,
+                url_endpoint=url_endpoint, 
                 input_format=NT,
-                namespaces_dict=namespaces_dict)  # Default: no prefixes
+                limit_remote_instances=200,
+                namespaces_dict=namespaces_dict,  # Default: no prefixes
+                instantiation_property="http://www.w3.org/1999/02/22-rdf-syntax-ns#type")  # Default rdf:type
 
-output_file = "shaper_nl_class_integration.shex"
+output_file = "shaper_ww1lod_all.shex"
 
 shaper.shex_graph(output_file=output_file,
                   acceptance_threshold=0.7)
