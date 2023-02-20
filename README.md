@@ -13,6 +13,12 @@ Shape Expressions for evaluating data quality in LOD published by Cultural Herit
 - [ShEx validation tool World War I dataset](https://rawgit.com/shexSpec/shex.js/wikidata/packages/shex-webapp/doc/shex-simple.html?manifestURL=https://raw.githubusercontent.com/hibernator11/shexer-CH/main/ww1lod.manifest.json)
 
 
+### Background
+
+
+### Austrian National Library
+
+A reproducible [Jupyter Notebook](https://nbviewer.org/github/hibernator11/shexer-CH/blob/main/onb/onb-sparql.ipynb) is provided for the Austrian National Library dataset in order to show how to query the data based on the [Europeana Data Model vocabulary](https://pro.europeana.eu/page/edm-documentation).
 
 ### World War I LOD dataset 
 
