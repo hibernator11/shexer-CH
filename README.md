@@ -16,7 +16,7 @@ The following links provide a set of Shape Expression examples based on relevant
 
 ### Austrian National Library
 
-A reproducible [Jupyter Notebook](https://nbviewer.org/github/hibernator11/shexer-CH/blob/main/onb/onb-sparql.ipynb) is provided for the Austrian National Library dataset in order to show how to query the data based on the [Europeana Data Model vocabulary](https://pro.europeana.eu/page/edm-documentation).
+A reproducible [Jupyter Notebook](https://nbviewer.org/github/hibernator11/shexer-CH/blob/main/onb/onb-sparql.ipynb) is provided for the [Austrian National Library dataset](https://labs.onb.ac.at/en/dataset/anno/) in order to show how to query the data based on the [Europeana Data Model vocabulary](https://pro.europeana.eu/page/edm-documentation).
 
 ### World War I LOD dataset 
 
