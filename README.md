@@ -1,5 +1,9 @@
 # shexer-CH
-This project is based on the automatic data quality assessment of Linked Open Data repositories made available for the public by Cultural Heritage institutions.
+This project is based on the automatic data quality assessment of Linked Open Data repositories made available for the public by Cultural Heritage institutions. This work is part of the article ["An automatic data quality approach to assess semantic data from cultural heritage institutions"](https://doi.org/10.1002/asi.24761).
+
+
+### How to cite
+Candela, G. (2023). An automatic data quality approach to assess semantic data from cultural heritage institutions. Journal of the Association for Information Science and Technology, 74(7), 866–878. https://doi.org/10.1002/asi.24761
 
 ### Background
 This work explores how the quality of Linked Open Data made available by Cultural Heritage institutions can be automatically assessed. The results obtained can be useful for other institutions who wish to publish and assess their collections. This work is based on the tool [sheXer](https://github.com/DaniFdezAlvarez/shexer) to mine an RDF dataset to automatically generate the Shape Expressions.
